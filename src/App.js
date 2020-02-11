@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
-import './components/searchBar/index';
+
+import Home from './components/home/home';
+
 function App() {
   return (
     <div className='App'>
-      <h1>Hello World!!</h1>
+      <Home />
     </div>
   );
 }
