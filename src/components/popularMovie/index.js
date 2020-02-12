@@ -1,6 +1,6 @@
 // View all popular movie
 import React, { Component } from 'react';
-
+import '../popularMovie/popular.css';
 const popularMoviesURL = `https://api.themoviedb.org/3/movie/popular?api_key=d272326e467344029e68e3c4ff0b4059&language=en-US&page=1`;
 
 class Popularmovie extends React.Component {
@@ -40,6 +40,16 @@ class Popularmovie extends React.Component {
     return (
       <div>
         <h1>Popular Movie List</h1>
+        <div className='movie-list'>
+          {movies.map(movie => {
+            console.log('Movie: ', movie);
+            return (
+              <div className='list'>
+                <p>Moive Title: {movie.title}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }

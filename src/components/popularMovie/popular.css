@@ -1,0 +1,15 @@
+/* Popular */
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list {
+  margin-bottom: 20px;
+  color: rgba(3, 56, 56, 1);
+  width: 30%;
+  /* height: 100px; */
+  background-color: #b6bcc1;
+  border: 2px solid brown;
+}
